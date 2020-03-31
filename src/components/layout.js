@@ -9,6 +9,11 @@ const Layout = ({ location, title, children }) => {
 
   if (location.pathname === rootPath) {
     header = (
+      //section태그를 추가 해보았다. 반드시 부모 태그 안에 존재 해야 한다. 여기서는 section이 h1의 부모 태그
+      <section
+        style={{backgroundColor : 'yellow', border: `2px solid black`,}}
+        >
+      
       <h1
         style={{
           ...scale(1.5),
@@ -26,6 +31,7 @@ const Layout = ({ location, title, children }) => {
           {title}
         </Link>
       </h1>
+      </section>
     )
   } else {
     header = (
