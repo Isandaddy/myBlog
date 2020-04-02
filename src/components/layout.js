@@ -12,45 +12,48 @@ const Layout = ({ location, title, children }) => {
       //section태그를 추가 해보았다. 반드시 부모 태그 안에 존재 해야 한다. 여기서는 section이 h1의 부모 태그
       <section
         style={{backgroundColor : 'yellow', border: `2px solid black`,}}
-        >
-      
-      <h1
-        style={{
-          ...scale(1.5),
-          marginBottom: rhythm(1.5),
-          marginTop: 0,
-        }}
-      >
-        <Link
+        >   
+        <h1
           style={{
-            boxShadow: `none`,
-            color: `inherit`,
+            ...scale(1.5),
+            marginBottom: rhythm(1.5),
+            marginTop: 0,
           }}
-          to={`/`}
         >
-          {title}
-        </Link>
-      </h1>
+          <Link
+            style={{
+              boxShadow: `none`,
+              color: `inherit`,
+            }}
+            to={`/`}
+          >
+            {title}
+          </Link>
+        </h1>
       </section>
     )
   } else {
     header = (
-      <h3
-        style={{
-          fontFamily: `Montserrat, sans-serif`,
-          marginTop: 0,
-        }}
-      >
-        <Link
-          style={{
-            boxShadow: `none`,
-            color: `inherit`,
-          }}
-          to={`/`}
+      <section
+        style={{backgroundColor : 'yellow', border: `2px solid black`,}}
         >
-          {title}
-        </Link>
-      </h3>
+        <h3
+          style={{
+            fontFamily: `Montserrat, sans-serif`,
+            marginTop: 0,
+          }}
+        >
+          <Link
+            style={{
+              boxShadow: `none`,
+              color: `inherit`,
+            }}
+            to={`/`}
+          >
+            {title}
+          </Link>
+        </h3>
+      </section>
     )
   }
   return (

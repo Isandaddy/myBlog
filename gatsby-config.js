@@ -6,13 +6,14 @@ module.exports = {
       summary: `꾸준히 하는 두 자식의 아버지가 되고 싶습니다.`,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    siteUrl: `https://isanayoungdaddy.netlify.com/`,
     social: {
       github: `Isandaddy`,
     },
   },
   plugins: [
     {
+      //fileSystem 플러그인으로 특정 파일들을 관리한다든가하는 일을 할 수 있다.
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/blog`,
