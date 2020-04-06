@@ -1,4 +1,9 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
+npm으로 package.json 만지고 인스톨 하는 과정에서 예상치못한 에러 발생!!!!!!
+4월 6일 24시를 기점으로 노드 모듈삭제 ㅜㅜ 아직 머가 먼지 모르겠음 
+그래서 기왕 이렇게 된거 다시 만들기로 했음 일단 블로그 포스트들은 아깝기 때문에 백업
+다시 공부
+
 <p align="center">
   <a href="https://www.gatsbyjs.org">
     <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
